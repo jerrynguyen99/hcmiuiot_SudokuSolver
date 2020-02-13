@@ -1,8 +1,8 @@
-package solved;
+package solver;
 import java.util.Arrays;
 import java.util.List;
 
-class Sudoku {
+public class Sudoku {
 
     // board
     private int[][] board;
@@ -22,7 +22,7 @@ class Sudoku {
     private static final int COVER_START_INDEX = 1;
 
     // Constructor
-    Sudoku(int[][] board) {
+    public Sudoku(int[][] board) {
         this.board = new int[SIZE][SIZE];
 
         for (int i = 0; i < SIZE; i++) {
@@ -152,7 +152,7 @@ class Sudoku {
         return result;
     }
 
-    void solve() {
+    public void solve() {
         int[][] cover = convertInCoverMatrix(board);
         DLX dlx = new DLX(cover);
         dlx.solve();

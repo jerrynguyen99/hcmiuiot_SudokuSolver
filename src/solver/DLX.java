@@ -1,4 +1,4 @@
-package solved;
+package solver;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

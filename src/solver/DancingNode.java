@@ -1,4 +1,4 @@
-package solved;
+package solver;
 class DancingNode {
     DancingNode left, right, top, bottom;
     ColumnNode column;

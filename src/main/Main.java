@@ -1,4 +1,7 @@
-package solved;
+package main;
+
+import solver.Sudoku;
+
 public class Main {
     public static int[][] GRID_TO_SOLVE = {
             {9,0,0,1,0,0,0,0,5},
